@@ -30,7 +30,7 @@ public class WebStepDefinitions {
         // This property is optional.
         // If not specified, WebDriver searches the path for chromedriver in your environment variables
         // Example path for Linux or Mac:
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Xexu\\Desktop\\UAB\\4.- CUARTO\\TQS\\cucumber-java-skeleton\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\jose9\\Documents\\TQS-Pract2-1489852-1526535-main\\cucumber-java-skeleton\\chromedriver.exe");
         driver = new ChromeDriver();
     }
 
@@ -42,6 +42,13 @@ public class WebStepDefinitions {
     @Given("I go to the home page")
     public void iGoToTheHomePage() {
         driver.get("https://www.megaotaku.com/");
+
+    }
+
+    @Given("I go to the login page")
+    public void iGoToTheLoginPage() {
+        driver.get("https://www.megaotaku.com/iniciar-sesion?back=my-account");
+
     }
 
     @Given("I go to the url {string}")
@@ -58,6 +65,7 @@ public class WebStepDefinitions {
     public void iClickOnButton(String button_text) {
         driver.findElement(By.linkText(button_text)).click();
     }
+
 
     @When("I click by div {string}")
     public void iClickByDiv(String text) {
@@ -80,6 +88,18 @@ public class WebStepDefinitions {
 
     }
 
+    @When("I click by class {string} li")
+    public void iClickByclassLi(String text) {
+        driver.findElement(By.xpath("//li[@class='"+text+"']")).click();
+
+    }
+/**  **/
+    @When("I click by class {string} div")
+    public void iClickByclassDiv(String text) {
+        driver.findElement(By.xpath("//div[@class='"+text+"']")).click();
+
+    }
+    /**  **/
     @When("I click form {string}")
     public void iClickByForm(String text) {
         driver.findElement(By.xpath("//button[@type='"+text+"']")).click();
@@ -88,7 +108,7 @@ public class WebStepDefinitions {
 
     @When("I type {string} value in {string} input")
     public void ITypeInInput(String text, String input){
-        WebElement field = driver.findElement(By.xpath("//input[@id='"+input+"']"));
+        WebElement field = driver.findElement(By.xpath("//input[@name='"+input+"']"));
         field.sendKeys(text);
     }
 
