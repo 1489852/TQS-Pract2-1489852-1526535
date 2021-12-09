@@ -13,6 +13,7 @@ Feature: Tests Add
     And Wait 5000 miliseconds
     And I click by class "btn btn-secondary"
     And I go to the home page
+    And Wait 2000 miliseconds
     And I click by href "//www.megaotaku.com/carrito?action=show"
     And Wait 5000 miliseconds
     Then I should see a "Yu-Gi-Oh! Pop Up Parade YAMI YUGI" text
@@ -29,7 +30,6 @@ Feature: Tests Add
     And Wait 5000 miliseconds
     Then I should see a "One Piece Banpresto World Figure Colosseum 3 Super Master Stars Piece The PORTGAS D. ACE (Two Dimensions)" text
     Then I should see a "Hay 3 artículos en su carrito." text
-
 
 
 
