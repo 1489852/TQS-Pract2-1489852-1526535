@@ -2,24 +2,36 @@ Feature: Tests Contact Information
   Web page navigation
 
 
-  Scenario: Test correct
-    Given I go to the url "https://checkout.bigcartel.com/1747798/M3KQ4831BWXI7AH5ZJR6OCE21/contact"
-    Then I should see a "Contact Information" text
-    When I type "Sergi" value in "buyer_first_name" input
-    And I type "Diaz" value in "buyer_last_name" input
-    And I type "sergi@gmail.com" value in "buyer_email" input
-    And I type "608123456" value in "buyer_phone_number input
-    And I click on "Next" button
-    Then I should see a "Edit" button
 
+  Scenario: Login correct
+    Given I go to the login page
+    And Wait 2000 miliseconds
+    Then I should see a "Iniciar sesión con su cuenta" text
+    When I type "tqsjuju@gmail.com" value in "email" input
+    And I type "tqs123456" value in "password" input
+    Then I click by class "btn btn-primary form-control-submit"
+    Then I should see a "Su cuenta" text
 
-  Scenario: Test empty
-    Given I go to the url "https://checkout.bigcartel.com/1747798/M3KQ4831BWXI7AH5ZJR6OCE21/contact"
-    Then I should see a "Contact Information" text
+  Scenario: Logout
+    Given I go to the login page
+    And Wait 2000 miliseconds
+    When I click by class "logout-link" li
+    Then I should see a "Iniciar sesión con su cuenta" text
 
+  Scenario: Login buit
+    Given I go to the login page
+    And Wait 2000 miliseconds
+    When I type "" value in "email" input
+    And I type "" value in "password" input
+    Then I should see a "Iniciar sesión con su cuenta" text
 
-  Scenario: Test wrong email
-    Given I go to the url "https://checkout.bigcartel.com/1747798/M3KQ4831BWXI7AH5ZJR6OCE21/contact"
-    Then I should see a "Contact Information" text
+  Scenario: Login incorrecte
+    Given I go to the login page
+    And Wait 2000 miliseconds
+    Then I should see a "Iniciar sesión con su cuenta" text
+    When I type "tqsjuju@gmail.com" value in "email" input
+    And I type "contramal" value in "password" input
+    Then I click by class "btn btn-primary form-control-submit"
+    Then I should see a "Iniciar sesión con su cuenta" text
 
 
