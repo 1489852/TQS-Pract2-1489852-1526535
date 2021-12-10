@@ -1,0 +1,79 @@
+-------------------------------------------------------------------------------
+Test set: io.cucumber.skeleton.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 22, Failures: 1, Errors: 6, Skipped: 0, Time elapsed: 170.224 s <<< FAILURE! - in io.cucumber.skeleton.RunCucumberTest
+Test Home page.Test Home page - Home My account  Time elapsed: 3.367 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"link text","selector":"person"}
+  (Session info: chrome=96.0.4664.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'MSI', ip: '10.109.189.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0a03d003cd8fc39be05d7cd7b3661ae8, findElement {using=link text, value=person}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\jose9\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63760/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a03d003cd8fc39be05d7cd7b3661ae8
+
+Tests Products.Tests Products - Navigation Item 2  Time elapsed: 4.068 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a href="/ofertas" class="amenu-link">...</a> is not clickable at point (711, 174). Other element would receive the click: <body id="index" class="lang-es country-es currency-eur layout-left-column page-index tax-display-enabled  pace-running st-wrapper">...</body>
+  (Session info: chrome=96.0.4664.93)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'MSI', ip: '10.109.189.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0a03d003cd8fc39be05d7cd7b3661ae8, clickElement {id=fe055cdd-cbc4-4981-9d29-1cf0a7377f0c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\jose9\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63760/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0a03d003cd8fc39be05d7cd7b3661ae8)] -> link text: OFERTAS]
+Session ID: 0a03d003cd8fc39be05d7cd7b3661ae8
+
+Tests Add.Tests Add - Correct Add 1 Item To Cart  Time elapsed: 12.322 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a rel="nofollow" href="//www.megaotaku.com/carrito?action=show" class="cart-link btn-primary">...</a> is not clickable at point (932, 92). Other element would receive the click: <body id="index" class="lang-es country-es currency-eur layout-left-column page-index tax-display-enabled  pace-running st-wrapper">...</body>
+  (Session info: chrome=96.0.4664.93)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'MSI', ip: '10.109.189.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0a03d003cd8fc39be05d7cd7b3661ae8, clickElement {id=41ae03ac-d519-47ea-b89f-720376cf746e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\jose9\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63760/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0a03d003cd8fc39be05d7cd7b3661ae8)] -> xpath: //a[@href='//www.megaotaku.com/carrito?action=show']]
+Session ID: 0a03d003cd8fc39be05d7cd7b3661ae8
+
+Tests Cart.Tests Cart - Remove all items  Time elapsed: 5.878 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a rel="nofollow" href="//www.megaotaku.com/carrito?action=show" class="cart-link btn-primary">...</a> is not clickable at point (929, 92). Other element would receive the click: <body id="index" class="lang-es country-es currency-eur layout-left-column page-index tax-display-enabled  pace-running st-wrapper">...</body>
+  (Session info: chrome=96.0.4664.93)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'MSI', ip: '10.109.189.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0a03d003cd8fc39be05d7cd7b3661ae8, clickElement {id=98c23bb0-8301-44ac-a2a7-70d1eed66997}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\jose9\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63760/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0a03d003cd8fc39be05d7cd7b3661ae8)] -> xpath: //a[@href='//www.megaotaku.com/carrito?action=show']]
+Session ID: 0a03d003cd8fc39be05d7cd7b3661ae8
+
+Tests Cart.Tests Cart - Add 1 Item and increse it to 3 units  Time elapsed: 27.175 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+
+Tests Contact Information.Tests Contact Information - Searchbar item click  Time elapsed: 11.122 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='ui-id-32']"}
+  (Session info: chrome=96.0.4664.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'MSI', ip: '10.109.189.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0a03d003cd8fc39be05d7cd7b3661ae8, findElement {using=xpath, value=//a[@id='ui-id-32']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\jose9\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63760/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a03d003cd8fc39be05d7cd7b3661ae8
+
+Tests Contact Information.Tests Contact Information - Test correct  Time elapsed: 6.977 s  <<< ERROR!
+io.cucumber.junit.platform.engine.UndefinedStepException: 
+The step 'I type "608123456" value in "buyer_phone_number input' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("I type {string} value in \"buyer_phone_number input")
+public void i_type_value_in_buyer_phone_number_input(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
